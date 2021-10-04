@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>Data Types</h1><br>
+        <p>All the programming languages have data types which can be changed language with the language. The data types are
+          essential for any computer programming language. Without them, it becomes very difficult to maintain information in a 
+          computer program. The data is a group of information which is not classified by category. It means that information will not
+          be arranged in a suitable way. This is called raw data. Data can be numerical data or a character or data and so forth. These
+          are called data types. 
+        </p>
+        <img src="images/datatypes.JPG" class=" img-fluid img-thumbnail mx-auto">
+        <div>
+          <ul>
+            <br>
+            <h3>Primary Data Types / Functional Types</h3>
+            <li style="list-style:square; font-size: 22px;"  class="types">Interger Data Type</li>
+            <ul style="list-style: disc" class="highlight">
+              <li>The Interger Data Type allows only the values of integer without decimals but not characters. In this case, when
+                you assign a character with a variable of interger, it will be regraded as alue of ASCII.</li>
+              <li>C has 3 classes of integer storage namely <i>short int, int</i> and <i>long int</i>.</li>
+              <li>All of these data types have <i>signed</i>i and <i>unsigned</i> forms.</li>
+              <li>A <i>short int</i>requires half the space than normal integer values.</li>
+              <li><i>Unsigned</i> numbers are always positive and consumes all the bits for the bits for tha mangnitude of the number.
+                Therefore, the range of an unsigned integer will be from 0 to 65535.</li>
+              <li>The long integers are used to declare a longer range of values and it occupies 4 bytes of storage space.</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="mytable">
+            <tr class="bg-info">
+              
+              <th scope="col">Type</th>
+              <th scope="col">Size</th>
+              <th scope="col">Value Range</th>
+              <th scope="col">Format Specifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td>int/signed int</td>
+              <td>2 or 4 bytes</td>
+              <td>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647</td>
+              <td>%d or %i</td>
+            </tr>
+            <tr>
+              
+              <td>unsigned int</td>
+              <td>2 or 4 bytes</td>
+              <td>0 to 65,535 or 0 to 4,294,967,295</td>
+              <td>%u</td>              
+            </tr>
+            <tr>
+              
+              <td>short<br>short int<br>signed short</td>
+              <td>2 bytes</td>
+              <td>-32,768 to 32,767</td>
+              <td>%hi</td>              
+            </tr>
+            <tr>
+              
+              <td>signed short int</td>
+              <td>2 bytes</td>
+              <td>0 to 65,535</td>
+              <td>%hu</td>             
+            </tr>
+            <tr>
+        
+              <td>long<br>long int<br>signed long<br>signed long int</td>
+              <td>4 bytes</td>
+              <td>-2,147,483,648 to 2,147,483,647</td>
+              <td>%li</td>  
+            </tr>
+            <tr>
+              
+              <td>unsigned long</td>
+              <td>4 bytes</td>
+              <td>0 to 4,294,967,295</td>
+              <td>%lu</td>              
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div>
+          <p> 
+            <p class="example">Example 1 : Print the size, Min value, Max value for integer Data types</p>      
+            <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Solution 
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+              <img src="images/Programs/pr1.JPG" class=" img-fluid img-thumbnail mx-auto">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <ul>
+        <li style="list-style:square; font-size: 22px;"  class="types">Floating Point Data Type</li>
+        <ul style="list-style: disc" class="highlight">
+          <li>The <i>float</i> allows numbers with the floating decimal points.</li>
+          <li>The <i>float</i>  data type is used to store fractional numbers (real numbers) with <i>6 digits of precision.</i></li>
+          <li>When the accuracy of floating point number is insufficient, we can use the <i>double</i> to define the number.</li>
+          <li>The <i>double</i>  is same as float but with longer precision and takes doubles space (8 bytes) than float.</li>
+          <li>To extend the precision further we can <i>long double</i>  which occupies 10 bytes of memory space.</li>
+        </ul>
+        </ul>
+
+          <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="mytable">
+              <tr class="bg-info">
+                
+                <th scope="col">Type</th>
+                <th scope="col">Size</th>
+                <th scope="col">Value Range</th>
+                <th scope="col">precision</th>
+                <th scope="col">Format Specifier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> 
+                <td>float</td>
+                <td>4 bytes</td>
+                <td>1.2E-38 to 3.4E+38</td>
+                <td>6 decimal places</td>
+                <td>%f</td>
+              </tr>
+              <tr>
+                <td>double</td>
+                <td>8 bytes</td>
+                <td>2.3E-308 to 1.7E+308</td>
+                <td>15 decimal places</td>
+                <td>%lf</td>
+              </tr>
+              <tr>
+                <td>long double</td>
+                <td>10 bytes</td>
+                <td>3.4E-4932 to 1.1E+4932</td>
+                <td>19 decimal places</td>
+                <td>%Lf</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div>
+            <p> 
+              <p class="example">Example 2 : Print the size, Min value, Max value for float Data types</p>      
+              <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                Solution 
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                <img src="images/Programs/pr2.JPG" class=" img-fluid img-thumbnail mx-auto">
+              </div>
+            </div>
+          </div>
+          <hr>
+          <ul>
+            <li style="list-style:square; font-size: 22px;"  class="types">Character Data Type</li>
+            <ul style="list-style: disc" class="highlight">
+              <li>The <i>char</i> type allows a character at the same time. A group of characters are called string.</li>
+              <li>Each character is stored in a separate place.</li>
+              <li>Character type variable can hold a single character and are declared by using the keyword char.</li>
+              <li>The Char Data type have signed and unsigned forms; both occupy 1 byte each, but having different ranges.</li>
+            </ul>
+          </ul>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead class="mytable">
+                <tr class="bg-info">
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Value Range</th>
+                  <th scope="col">Format Specifier</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td>char</td>
+                  <td>1 bytes</td>
+                  <td>-128 to 127 or 0 to 255</td>
+                  <td>%c</td>
+                </tr>
+                <tr>
+                  <td>unsigned char</td>
+                  <td>1 bytes</td>
+                  <td>0 to 255</td>
+                  <td>%c</td>
+                </tr>
+                <tr>
+                  <td>signed char</td>
+                  <td>1 bytes</td>
+                  <td>-128 to 127</td>
+                  <td>%c</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <div>
+              <p> 
+                <p class="example">Example 2 : Print the size, Min value, Max value for float Data types</p>      
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample2">
+                  Solution 
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                  <img src="images/Programs/pr3.JPG" class=" img-fluid img-thumbnail mx-auto">
+                </div>
+              </div>
+              <hr>
+
+              <ul>
+                <li style="list-style:square; font-size: 22px;"  class="types">List of Format Specifiers</li>
+              </ul>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                  <thead class="mytable">
+                    <tr class="bg-info">
+                      <th scope="col">Supported data types</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Format Specifier</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="3" class="text-center" style="color: #ec650b;font-size: 25px;">Interger Data Type</td>
+                    </tr>
+                    <tr> 
+                      <td>short / unsigned short / int</td>
+                      <td>Signed Integer</td>
+                      <td>%d or %i</td>
+                    </tr>
+                    <tr>
+                      <td>unsigned short</td>
+                      <td>Unsigned Integer(Short)</td>
+                      <td>%hu or %d</td>
+                    </tr>
+                    <tr>
+                      <td>short / signed short</td>
+                      <td>Signed Integer(Short)</td>
+                      <td>%hi</td>
+                    </tr>
+                    <tr>
+                      <td>long</td>
+                      <td>Signed Integer</td>
+                      <td>%l or %ld or %li</td>
+                    </tr>
+                    <tr>
+                      <td>unsigned int / unsigned long</td>
+                      <td>Unsigned Integer</td>
+                      <td>%lu or %u</td>
+                    </tr>
+                    <tr>
+                      <td>long long</td>
+                      <td>Signed Integer</td>
+                      <td>%lli or %lld</td>
+                    </tr>
+                    <tr>
+                      <td>unsigned long long</td>
+                      <td>Unsigned Integer</td>
+                      <td>%llu</td>
+                    </tr>
+                    <tr>
+                      <td>Short / unsigned short / int unsigned int/ long</td>
+                      <td>Hexadecimal representation of Unsigned Integer</td>
+                      <td>%x or %X</td>
+                    </tr>
+                    <tr>
+                      <td>Short / unsigned short / int / unsigned int / long</td>
+                      <td>Octal representation of Integer</td>
+                      <td>%o</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="text-center" style="color: #ec650b;font-size: 25px;">Floating Data Type</td>
+                    </tr>
+                    <tr>
+                      <td>float / double</td>
+                      <td>Scientific notation of float values</td>
+                      <td>%e or %E</td>
+                    </tr>
+                    <tr>
+                      <td>float</td>
+                      <td>Floating point</td>
+                      <td>%f</td>
+                    </tr>
+                    <tr>
+                      <td>float / double</td>
+                      <td>Similar as %e or %E</td>
+                      <td>%g or %G</td>
+                    </tr>
+                    <tr>
+                      <td>double</td>
+                      <td>Floating point</td>
+                      <td>%lf</td>
+                    </tr>
+                    <tr>
+                      <td>long double</td>
+                      <td>Floating point</td>
+                      <td>%Lf</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="text-center" style="color: #ec650b;font-size: 25px;">Char Data Type</td>
+                    </tr>
+                    <tr>
+                      <td>char / unsigned char</td>
+                      <td>Character</td>
+                      <td>%c</td>
+                    </tr>
+                    <tr>
+                      <td>char*</td>
+                      <td>String</td>
+                      <td>%s</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="text-center" style="color: #ec650b;font-size: 25px;">Others</td>
+                    </tr>
+                    <tr>
+                      <td>void*</td>
+                      <td>Address of pointer to void void*</td>
+                      <td>%p</td>
+                    </tr>
+                    <tr>
+                      <td>Print nothing</td>
+                      <td></td>
+                      <td>%n</td>
+                    </tr>
+                    <tr>
+                      <td>Print % character</td>
+                      <td></td>
+                      <td>%%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+      </div>
+    </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

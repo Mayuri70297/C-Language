@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>Structure</h1><br>
+        <p>Structure is the collection of variables of different types under a single name for better handling. For example: You want to store 
+            the information about person about his/her name, citizenship number and salary. You can create these information separately but, 
+            better approach will be collection of these information under single name because all these information are related to person.</p>
+        <img src="images/str1.PNG" class="img-fluid img-thumbnail mx-auto">
+        <br><br>
+        <h4>Structure Variable Declaration</h4> 
+        <p>When a structure is defined, it creates a user-defined type but, no storage is allocated. For the above structure of person, variable
+            can be declared as:
+        </p>
+        <img src="images/str2.PNG" class="img-fluid img-thumbnail mx-auto">
+        <br><br>
+        <h4>Accessing members of a structure</h4> 
+        <p>There are two types of operators used for accessing members of a structure.
+            <h5>Member operator(.)</h5>
+            <ul>
+                <li>Structure pointer operator(->)</li>
+                <li>Any member of a structure can be accessed as : structure_variable_name.member_name</li>
+            </ul>
+        Suppose, we want to access salary for variable 'p2'. Then, it can be accessed as:<br>p2.salary
+        </p>
+        <h4>Using pointer is structure</h4> 
+        <p>We can declare a pointer object for the structure.<br>
+            You can define a pointer to a structure in the same way as any pointer to any type.<br>
+            e.g. : struct Book *b1;<br>
+            Here, the pointer variable of type struct name is created.
+            <ul>
+                <li>Structure's member through pointer can be used in two ways.</li>
+                <li>Referencing pointer to another address to access memory.</li>
+            </ul>
+        Using dynamic memory allocation<br>Consider an example to access structure's member through pointer.
+        </p>
+    </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>File Handling</h1><br>
+        <p>A file represents a sequence of byte on the disk where a group of related data is stored. File is created for permanent storage of data. 
+            It is a readymade structure. In C, we use a structure pointer of file type to declare a file. C provides a number of functions that help to 
+            perform basic file operations.</p>
+        <div class="table-responsive">
+            <h2>Function Description</h2>
+            <table class="table table-bordered table-striped table-hover">
+              <tbody>
+                <tr>
+                  <td>fopen()</td>
+                  <td>Create a new file or open a existing file.
+                  </td>
+                </tr>
+                <tr>
+                    <td>fclose()</td>
+                    <td>closes a file</td>
+                </tr>
+                <tr>
+                    <td>getc()</td>
+                    <td>reads a character from file</td>
+                </tr>
+                <tr>
+                    <td>putc()</td>
+                    <td>writes a character to a file</td>
+                </tr>
+                <tr>
+                    <td>fscanf()</td>
+                    <td>reads a set of data from a file</td>
+                  </tr>
+                  <tr>
+                      <td>fprintf()</td>
+                      <td>writes a set of data toa a file</td>
+                </tr>
+                <tr>
+                    <td>getw()</td>
+                    <td>reads a integer from a file</td>
+                </tr>
+                <tr>
+                    <td>putw()</td>
+                    <td>writes a integer to a file</td>
+                </tr>
+                <tr>
+                    <td>fseek()</td>
+                    <td>set the position to desire point</td>
+                </tr>
+                <tr>
+                    <td>ftell()</td>
+                    <td>give current position in the file</td>
+                </tr>
+                <tr>
+                    <td>rewind()</td>
+                    <td>set the position to the begining point</td>
+              </tr>
+                </tbody>
+              </table>
+              </div>
+
+              <div class="table-responsive">
+                <h2>Mode Description</h2>
+                <table class="table table-bordered table-striped table-hover">
+                  <tbody>
+                    <tr>
+                      <td>r</td>
+                      <td>opens an text file for reading mode
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>w</td>
+                        <td>opens or create a text file for writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>opens a text file in append mode</td>
+                    </tr>
+                    <tr>
+                        <td>r+</td>
+                        <td>opens a text file in both reading and writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>w+</td>
+                        <td>opens a text file in both reading and writing mode</td>
+                      </tr>
+                      <tr>
+                          <td>a+</td>
+                          <td>opens a text file in both reading and writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>rb</td>
+                        <td>opens an library file for reading mode</td>
+                    </tr>
+                    <tr>
+                        <td>wb</td>
+                        <td>opens or create a binary file for writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>ab</td>
+                        <td>opens a binary file in append mode</td>
+                    </tr>
+                    <tr>
+                        <td>rb+</td>
+                        <td>opens a binary file in both reading and writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>wb+</td>
+                        <td>opens a binary file in both reading and writing mode</td>
+                    </tr>
+                    <tr>
+                        <td>ab+</td>
+                        <td>opens a binary file in both reading and writing mode</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

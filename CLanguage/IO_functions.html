@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>Input and Output Functions</h1><br>
+        <h4 style="color: #dc143c">Contents : </h4>
+        <h5 style="color: #000">
+        <ul>
+            <li>Standard I/O Functions</li>
+            <li>Character I/O Functions</li>
+            <li>String I/O Functions</li>
+        </ul>
+        </h5>
+        <hr>
+        <div>
+            <h3>1) Standard I/O Functions</h3>
+            <p class="highlight">A computer cannot make anything without giving any request. The user must give the request, the answer will be sent
+            by computer.
+            <ul>
+                <li>The functions printf() and scanf() are used to perform input and output operations.</li>
+                <li>The printf() function prints the information provided on the screen (i.e. monitor).</li>
+                <li>The scanf() function receives the data from the user.</li>
+            </ul>
+            By using printf() and scanf() functions, we can print and input with any format with any format with the assistance
+            of the format strings. Since the format strings decide only which type of data to enter or shown.<br>A limitations of
+            using scanf() function does not allow empty spaces between the strings.<br><p class="list1" style="color: #d2691e;">
+            For example<br>when we enter a name Mother Theresa, a scanf() function allows only the string of "Mother".</p>
+            The remainder of the word will not be stored in the respective variable. To avoid this kind of difficulty, we have to
+            use a special function called <i>gets().</i><br><br>
+            <p class="list1" style="color: #01a332">Syntax</p>
+            <p class="list1" style="color: #01a332;text-align: center;letter-spacing: 1px;">
+                printf("<span>&#60;Format_String&#62;,&#60;List_of_Variables&#62;</span>");<br>
+                scanf("<span>&#60;Format_String&#62;,&#60;& List_of_Variables&#62;</span>");<br><br>
+            <p class="list1">In this syntax, both functions are taken as two arguments, format string and list of variables.
+            <ul>
+                <li><span>&#60;Format_String&#62; : The format strings are used to determine the input or output data type.</span></li>
+                <li><span>&#60;List_of_Variables&#62; : The list of variables indicate variables which have data.</span></li>
+            </ul>
+            </p>
+            </p>
+            </p>
+        </div>
+        <div>
+            <p> 
+              <p class="example">Program : Input number and float value and display the same</p>      
+              <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                Solution 
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body">
+                <img src="images/Programs/pr4.PNG" class=" img-fluid img-thumbnail mx-auto">
+              </div>
+            </div>
+          </div>
+        <div class="list">
+            <h3>2) Character Input and Output</h3>
+            <p>When you develop any application which is connected with entering information, it can have many numerical and character fields.
+            <h5>Character Input Functions</h5>
+            <ul>
+                <li><i>getchar() function : </i><br>getchar() function allows the multiple characters but it assigns only onr character with the variable. for example : when 
+                    you enter as "Rose" the variable receives only the "R".</li>
+                <li><i>getche() function : </i><br>getche() function makes it possible only one character to enter by the user.</li>
+                <li><i>getch() function : </i><br>getch() allows only character which is not visible once it is entered.</li>
+            </ul>
+            </p>
+            <h5>Character Output Functions</h5>
+            <p>To carry out operations of output putch() and putchar() functions are used. Once that a character has been keyed, we 
+                can immediately show them with the assistance of the putchar() or putch() functions.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

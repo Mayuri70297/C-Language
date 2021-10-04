@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+        nav ul li{
+            list-style: none;
+        }
+       .list li i{
+            color: #8f06ff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav> 
+        
+<div class="container-fluid mycontainer bottomfix">
+    <div class="container">
+        <h1>Basic Structure of C Program</h1><br>
+        <p>Structure of C Program is defined by set of rules called protocol, to be followed by programmer while writing
+            C program. All C program are having sections/parts which are mentioned below -
+            <div class="list1">
+            <li>Documentation section</li>
+            <li>Link section</li>
+            <li>Definition section</li>
+            <li>Global declaration section</li>
+            <li>Functio prototype declaration section</li>
+            <li>Main function</li>
+            <li>User defined function definition section</li>
+            </div>
+        </p>
+        <p>
+            Many programming language such as java, C++, Pascal, COBOL etc., have a certain standard format which should
+            be followed of the programmer. In the same way, the C language also has the standard structure which resembles
+            this. 
+        </p>
+        <div>
+            <div class="program">
+                <p>#include&lt;Header Files&gt<br>[Global Declaration]<br>main()<br>{<br>&lt;Local Declaration&gt ;
+               <br>&lt;Statements&gt ;<br>}</p>
+            </div>
+            <ul>
+                <li>In the syntax, we mentioned include header files, which means we have to include the header file in the
+                    second line, you can see global declarations. It indicates that a function or the variable an be declared
+                    here and accessed anywhere in the program.</li>
+                <li>The main function, this is neccessary in each C program, because the execution starts in main function.</li>
+                <li>Each C Program must be started with the main function.</li>
+                <li>Following main function, we used the curly braces which are parts to start and of closing of the program.</li>
+                <li>The statements are nothing but, the goal of the function.</li>
+            </ul>
+        </div>
+        <hr>
+        <h3>Understanding Header Files</h3>
+        <p>We need to declare all functions in C language before you can use them. Because it would be helpful to group
+        related function declaration and manage them in a single place. This is the function of header files.<br>
+        Header files are vital in large projects because they give you an overview of source code without having to look
+        through every line of code.<br>The header files are the collection of pre defined functions neccessary for the
+        operation of a prgram if it in a section written by the user of code, or as an element of the standard libraries of C
+        language by conventio, the names of the header files finish with .h(dot h).<br>The suffix of .h is used by header files
+        which are equipped with operating system. We can also make our own header files if we need.</p>
+        <hr>
+        <h4>The header files define the Following functions :</h4>
+        <ul>
+        <li>Structures of certain files and subroutines.</li>
+        <li>Type the synonyms or implementation chaeacteristics.</li>
+        <li>Constants and macros which are substituted during the phase of pretreatment of language C.</li>
+        </ul>
+        <hr>
+        <h4>Header Files</h4>
+        <div class="list">
+            <ul>
+                <li><i>string.h</i> - This file contains the functios which are related to string manupulations.</li>
+                <li><i>alloc.h</i> - It has the function which are related with memory allocation.</li>
+                <li><i>time.h</i> - This header file consists of the time related functions.</li>
+                <li><i>conio.h</i> - The con io.h has console (i.e. monitor) input output functions.</li>
+                <li><i>ctype.h</i> - It include the functions which are related to conversion.</li>
+                <li><i>stdlib.h</i> - It has standard library functions and also memory allocation.</li>
+                <li><i>graphics.h</i> - It has many built in functions that support graphics.</li>
+                <li><i>dos.h</i> - It defines many functions that are related to date and delay which is used to set interval.</li>
+                <li><i>process.h</i> - It contains system supporting functions.</li>
+            </ul>
+        </div>
+        <hr>
+        <h3>The Main Function</h3>
+        <p>A C program composed of one or more functions.<br>A functions is a line of one or more statements which are joined
+         in curly brackets carry our a certain operations and return a simple value to the program in which they reside; it also
+         could be look like subroutine.<br>All the C program must have main function. The execution of program start with main 
+         function.<br>This mai function will call usually other functions coming from same program, and other of the libraries to
+         carry out its work.<br>Mainly function has two parts : <ul  class="list" style="list-style: decimal"><li><i>Declaratory Part</i> :It handles
+         declaration of the variables.<li><i>Achievable Part</i> : It contain the code which carries out of detail charge.</li>
+         </li></ul></p>
+         <hr>
+         <h3>First C Program</h3>
+         <div>
+             <div class="program">
+                 <p>#include&lt;stdio.h&gt<br>#include&lt;conio.h&gt<br>void main()<br>{<br>clrscr();<br>printf("Hello World");
+                <br>getch();<br>}</p>
+             </div>    
+             <ul class="list">
+                <li><i>Printing a Text message</i><br><p>It is a comment line which denotes the purpose of the program.</p></li>
+                <li><i>#include&lt;stdio.h&gt</i><br><p>It is a preprocessor directive which is used to include stdio.h which
+                    contains standard input and output functions.</p></li>
+                <li><i>void main()</i><br><p>'main' is a function, every programs execution start from the main function which should
+                    be enclosed with the pair of curly braces. A void is a keyword which indicates the main function should 
+                    not return any value.</p></li>
+                <li><i>printf("HelloWorld");</i><br><p>printf() is a function which is used to print the given information inside the brackets.</p></li>
+             </ul>
+         </div>
+    </div>
+</div>
+ <div class="card-footer text-muted mt-4">
+   Designed by Mayuri Pandhare | +91 9022200318
+ </div>
+ 
+</body>
+</html>

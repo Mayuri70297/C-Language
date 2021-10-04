@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>Desicion and Control Flow Statement</h1><br>
+        <h3>Branching Statement</h3>
+        <p>Branching decides what actions to take. Branching is so called because the program chooses to follow one branch or another. 
+            The Clanguage programs follows a sequential form of execution of statements. Many times it is required to alter the flow of sequence 
+            of instructions. C language provides statements that can alter the flow of a sequence of instructions. These statements are called as 
+            control statements. To jump from one part of the program to another, these statements help. The control transfer may be unconditional
+            or conditional.
+        </p>
+        <p>Branching Statement are of following categories:</p> 
+            <ul>
+                <li>if Statement</li>
+                <li>The If Else Statement </li>
+                <li>Compound Relational tests</li>
+                <li>Nested if Statement</li>
+                <li>Switch Statement</li>
+            </ul>
+            <h3>Looping Statements</h3>
+            <p>Loops provide a way to repeat commands and control how many times they are repeated.
+            C provides a number of looping ways</p>
+            <ul>
+                <li>while</li>
+                <li>do-while</li>
+                <li>for</li>
+            </ul>
+            <h3>Jumping Statements</h3>
+            <p>These statements transfer control to another part of the program. When we want to break any loop condition or to continue any loop with skipping any values then we use these 
+                statements. There are three types of jumps statements.</p>
+            <ul>
+                <li>Goto</li>
+                <li>Break</li>
+                <li>Continue</li>
+            </ul>
+        </p>
+        <img src="images/CFS.PNG" class=" img-fluid img-thumbnail mx-auto">
+        <br><br>
+        <div>
+            <h2>Branching Statement</h2>
+                <h4>If Statement</h4>
+                <p>This is the simplest form of the branching statements takes an expression in parenthesis and a statement or block of statements if 
+                the expression is true then the same ki statements gets executed otherwise these statements are skipped. If the Condition/Expression 
+                evaluates to true, then the block of code inside the if statement will be executed.</p>
+          
+                <h4>If else Statement</h4>
+                <p>An if statement can be followed by an optional else statement, which executes when the boolean expression is false.</p>
+
+                <img src="images/if-else.PNG" width="500px" height="400px" style="float: right;" class=" img-fluid img-thumbnail mx-auto"> 
+                <img src="images/if.PNG" width="460px" height="400px" class=" img-fluid img-thumbnail mx-auto"> 
+                <br><br>
+
+                <h4>Nested If else Statement</h4>
+                <p>It is Always legal in C programming to nest if else statement, which means you can use one if or else if statement inside another
+                    if or else if statement.
+                </p>
+
+                <h4>Switch Statement</h4>
+                <img src="images/switch.PNG" width="300px" height="300px" style="float: right; padding: 10px;" class=" img-fluid img-thumbnail mx-auto">
+                <p>The expression following the keyword switch is any C expression that evaluates an integer or a char value. First, the expression
+                     following the keyword switch is evaluated. The value is then matched, one by one, against the constant values that follow the 
+                     case statements. When a match is found, the program executes the statements following that case, and all subsequent case and 
+                     default statements as well. If no match is found with any of the case statements, only the statements following the default
+                      are executed. A few examples show how this control structure works We can check the value of any expression in a switch. 
+                      Thus the following switch statements are legal. 
+                      <ul>
+                          <li>switch (i+jk)</li>
+                          <li>switch (23 + 45 % 4 * k)</li>
+                          <li>switch (a<4 && b>7)</li>
+                      </ul>
+                         Expressions can also be used in cases provided they are constant expressions. Thus case 3+7 is correct, however, case a + bis incorrect. 
+                          The break statement when used in a switch takes the control outside the switch. However, use of continue will not take 
+                          the control to the beginning of switch as one is likely to believe. In principle, a switch may occur within another, but
+                           in statements practice it is rarely done. Such statements would be called nested switch The switch statement is very 
+                           useful while writing menu driven programs. This aspect of switch is discussed in the exercise at the end of this chapter.
+                        </p> 
+        </div>
+
+        <div class="table-responsive">
+        <h2>Looping Statement</h2>
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="mytable">
+            <tr class="bg-info">
+              
+              <th scope="col">Loop Type</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>While Loop</td>
+              <td>Repeats a statement or group of statements while a given condition is true. It test the condition before executing loop body</td>
+            </tr>
+            <tr>
+                <td>for Loop</td>
+                <td>Execute a sequence of statements multiple times and abbreviates the code that manage the loop variable.</td>
+            </tr>
+            <tr>
+                <td>do While Loop</td>
+                <td>Like a while statement, except that it tests the condition at the end of loop body.</td>
+            </tr>
+            <tr>
+                <td>nested Loop</td>
+                <td>You can use one or more loop inside any other while, for or do while loop.</td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+    </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>Function</h1><br>
+        <ul>
+            <li>A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), 
+                and all the most trivial programs can define additional functions.</li>
+            <li>You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but 
+                logically the division usually is so each function performs a specific task. </li>
+            <li>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the 
+                actual body of the function.</li>
+            <li>The C standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function gets() to get the line of string. </li>
+            <li>A function is known with various names like a method or a sub-routine or a procedure, etc.</li>
+            <li>A function definition in C programming language consists of a function header and a function body. Here are all the parts of a function:
+                <ul>
+                    <li><b>Return Type:</b> A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.</li>
+                    <li><b>Function Name:</b>This is the actual name of the function. The function name and the parameter list together constitute the function signature.</li>
+                    <li><b>Parameters:</b> A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the
+                        type order, and number of the parameters of a function. Parameters are optional; that is a function may contain no parameters.
+                    </li>
+                    <li><b>Function Body :</b>The function body contains a collection of statements that define what the function does<br>
+                    e.g.<br>void main()<br>{<br>printf("Hello World");<br>}</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Types of Function</h4> 
+        <ul>
+            <li><b>Built in Function :</b><br>Built in functions are those functions which are already defined in the system.<br>
+            e.g.<br>getch(),clrscr(),strrev(),exit(0),puts() etc.</li>
+
+            <li><b>User Defined Function :</b><br>User Defined functionsare those which the user has to define as he wants<br>
+            Use defined functions can be defined in the following three parameters
+                <ul>
+                    <li><b> Function without returning value with arguments</b><br>This type of functions can not return any value vecause the return type used for such function is 'void' and void can't return any value.<br>
+                    e.g<br>void showmsg()<br>{<br>printf("Sangli");<br>}</li>
+                    <br>
+                    <li><b>Function without returning value without any arguments</b><br>This type of function contains no. of arguments but not return any value.<br>
+                    e.g<br>void getdata(int roll, float avg)<br>{<br>printf("Roll Number = %d",roll);<br>printf("Average Marks = %.2f",avg);<br>}</li>
+                    <br>
+                    <li><b>Function with returning value without arguments</b><br>This type of function can return value to share with other functions The user can use int, float, double return types to return a value except void.<br>
+                    e.g<br>int areaofsquare()<br>{<br>int side<br>printf("Enter side of square");<br>scanff("%d",&side);<br>return side*side<br>}</li>
+                    <br>
+                    <li><b>Function with returning value with arguments</b><br>This type of functions contains number of arguments and also returns values.<br>
+                    e.g<br>float areaofcircle()<br>{<br>return 3.14*r*r;<br>}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    font-family: sans-serif;
+}
+.navbar .navbar-nav .nav-item{
+    font-size: 18px;
+    font-weight: bold;
+    }
+    .navbar .navbar-nav .nav-item a{
+      color: #fff;
+      padding: 5px 15px;
+      margin-left: 5px;
+      border: 1px solid transparent;
+      transition: 0.6s ease;
+    }
+    .navbar .navbar-nav .nav-item a:hover{
+      background-color: #fff;
+      color: #000;
+    }    
+.navbar .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif  ;
+}
+.carousel{
+    margin-top: -5px;
+}
+.mycontainer{
+    border: 1px solid lightgray;
+    padding: 20px;
+    background-color: #f3eff5;
+    font-size: 18px;
+    color: #010138;
+    font-weight: bold;
+}
+.bottomfix{
+    margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+    color: #f84802;
+}
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+}
+h2, h3, h4, h5{
+    color: #0000ff;
+}
+.list1{
+    list-style: disc;
+    margin-left: 40px;
+}
+.cards{
+    margin-left: 110px;
+}
+.card-title{
+    text-align: center;
+}
+.btn{
+    margin-left: 60px;
+}
+.highlight i{
+    color: #7a2903;
+}
+.mytable tr{
+    color: #fff; 
+    letter-spacing: 1px;
+    text-align: center;
+  }
+.program{
+    color: #970505;
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border: 1px solid #000;
+    margin: 20px;
+    background-color: #caf7f7;
+    text-align: left;
+}
+.example{
+    color: #dc143c;
+    margin-left: 60px;
+}
+.list li i{
+    color: #8f06ff;
+}
+.card-footer{
+    text-align: center;
+    background-color: #000;
+    font-weight: bold;
+    right: 0px;
+    left: 0px;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+
+

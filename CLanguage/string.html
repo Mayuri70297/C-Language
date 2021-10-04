@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/672afe8874.js" crossorigin="anonymous"></script>
+    <style>
+      ul li{
+        margin-left: 22px;
+      }
+      .types{
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" style="font-size: 35px;" href="#">Coding</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="CLanguage.html" class="nav-link">Home</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav> 
+  
+    <div class="container-fluid mycontainer bottomfix">
+      <div class="container">
+        <h1>String</h1><br>
+        <p>In C programming array of character are called strings. A string is terminated by null character /0.</p>
+        <p>For example : "MAYURI PANDHARE"</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead class="mytable">
+                <tr class="bg-warning">
+                  <th scope="col">M</th>
+                  <th scope="col">A</th>
+                  <th scope="col">Y</th>
+                  <th scope="col">U</th>
+                  <th scope="col">R</th>
+                  <th scope="col">I</th>
+                  <th scope="col"> </th>
+                  <th scope="col">P</th>
+                  <th scope="col">A</th>
+                  <th scope="col">N</th>
+                  <th scope="col">D</th>
+                  <th scope="col">H</th>
+                  <th scope="col">A</th>
+                  <th scope="col">R</th>
+                  <th scope="col">E</th>
+                </tr>
+              </thead>
+              </table>
+        </div>
+        <div>
+            <h4>Declaration of string</h4>
+            <p>Strings are declared in c in similar manner as arrays. Only differences is that, strings are of char type.</p>
+            <p>char s[5]    <img src="images/str.PNG" class="img-fluid img-thumbnail mx-auto"></p>
+        </div>
+        <p>String can access size-1 character i.e. if size is 20 the only 19 characters can be stored.</p>
+        <div class="table-responsive">
+            <h2>String Handling Functions</h2>
+            <table class="table table-bordered table-striped table-hover">
+              <thead class="mytable">
+                <tr class="bg-info">
+                  <th scope="col">Library</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>strlen()</td>
+                  <td>To calculate number of characters present in the string strlen() function is used which counts no of characters upto the NULL(/0)
+                      character and returns integer value.<br>e.g.<br>char str[20]="Sangli";<br>strlen(str);
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                    <td>strupr()</td>
+                    <td>To convert small letters to capital strupr() function is used which requires string variable as argument.<br>
+                    e.g<br>char str[20]="Mayuri Pandhare";<br>strupr(str);</td>
+                    <td>MAYURI PANDHARE</td>
+                </tr>
+                <tr>
+                    <td>strlwr()</td>
+                    <td>To convert capital letters to small strlwr() function is used which requires string variable as argument.<br>
+                    e.g<br>char str[20]="MAHARASHTRA";<br>strlwr(str);</td>
+                    <td>maharashtra</td>
+                </tr>
+                <tr>
+                    <td>strrev()</td>
+                    <td>To reverse the string strrev() function is used.<br> e.g<br>char str[20]="Welcome";<br>strrev(str);</td>
+                    <td>emocleW</td>
+                </tr>
+                <tr>
+                    <td>strcpy()</td>
+                    <td>To copy one string to another strcpy() function is used. This function requires two string type arguments from them, first is 
+                        where we have to copy and second is from where we have to copy.<br> e.g<br>char str1[20]="India";<br>char str2[20];<br>strcpy(str2,str1);
+                    </td>
+                    <td>India</td>
+                  </tr>
+                  <tr>
+                      <td>strcat()</td>
+                      <td>To concatenate two string strcat() function is used which adds another string to present string.<br> e.g<br>char str1[20]="Rohit";<br>char str2[20]="Sharma";<br>strcat(str1,str2);</td>
+                      <td>RohitSharma</td>
+                </tr>
+                  <tr>
+                      <td>strcmp()</td>
+                      <td>To compare two strings strcmp() function is used which adds another string to present string<br>e.g<br>char str1[20]="Institute";<br>char str2[20]="Office";<br>strcmp(str1,str2);</td>
+                    <td>Strings are not equal</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+    </div>
+    
+    <div class="card-footer text-muted mt-4">
+      Designed by Mayuri Pandhare | +91 9022200318
+    </div>
+</body>
+</html>
